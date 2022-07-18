@@ -1,0 +1,6 @@
+framework module Pods_MixCheck {
+  umbrella header "Pods-MixCheck-umbrella.h"
+
+  export *
+  module * { export * }
+}
