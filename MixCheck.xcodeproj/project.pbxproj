@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		54BB37277DF2A30E3856EC06 /* Pods_MixCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515041FB4BF3ED40FC22A72 /* Pods_MixCheck.framework */; };
+		FC5A524A2885EED700135D74 /* DropboxBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A52492885EED700135D74 /* DropboxBrowserViewController.swift */; };
+		FC5A524C2885EF3600135D74 /* DropboxBrowserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A524B2885EF3600135D74 /* DropboxBrowserViewCell.swift */; };
+		FC5A524E2885F00F00135D74 /* dbRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A524D2885F00F00135D74 /* dbRow.swift */; };
 		FCB4E80F28805AF100E1F03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4E80E28805AF100E1F03E /* AppDelegate.swift */; };
 		FCB4E81128805AF100E1F03E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4E81028805AF100E1F03E /* SceneDelegate.swift */; };
 		FCB4E81328805AF100E1F03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4E81228805AF100E1F03E /* ViewController.swift */; };
@@ -31,6 +34,9 @@
 		29035F668B8E18298BAA1D53 /* Pods-MixCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixCheck.release.xcconfig"; path = "Target Support Files/Pods-MixCheck/Pods-MixCheck.release.xcconfig"; sourceTree = "<group>"; };
 		5515041FB4BF3ED40FC22A72 /* Pods_MixCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B4398009DF77697FB23D9 /* Pods-MixCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixCheck.debug.xcconfig"; path = "Target Support Files/Pods-MixCheck/Pods-MixCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		FC5A52492885EED700135D74 /* DropboxBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxBrowserViewController.swift; sourceTree = "<group>"; };
+		FC5A524B2885EF3600135D74 /* DropboxBrowserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxBrowserViewCell.swift; sourceTree = "<group>"; };
+		FC5A524D2885F00F00135D74 /* dbRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbRow.swift; sourceTree = "<group>"; };
 		FCB4E80B28805AF100E1F03E /* MixCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB4E80E28805AF100E1F03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB4E81028805AF100E1F03E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +84,6 @@
 				844B4398009DF77697FB23D9 /* Pods-MixCheck.debug.xcconfig */,
 				29035F668B8E18298BAA1D53 /* Pods-MixCheck.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,6 +156,7 @@
 			children = (
 				FCB4E83428805E5B00E1F03E /* Song.swift */,
 				FCB4E83728805E8C00E1F03E /* Album.swift */,
+				FC5A524D2885F00F00135D74 /* dbRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +167,8 @@
 				FCB4E83A288069F500E1F03E /* AlbumTableViewCell.swift */,
 				FCB4E83C2880762500E1F03E /* MediaPlayer.swift */,
 				FCB4E83E28809D0300E1F03E /* MusicPlayerViewController.swift */,
+				FC5A52492885EED700135D74 /* DropboxBrowserViewController.swift */,
+				FC5A524B2885EF3600135D74 /* DropboxBrowserViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,10 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB4E83528805E5B00E1F03E /* Song.swift in Sources */,
+				FC5A524A2885EED700135D74 /* DropboxBrowserViewController.swift in Sources */,
 				FCB4E83D2880762500E1F03E /* MediaPlayer.swift in Sources */,
 				FCB4E81328805AF100E1F03E /* ViewController.swift in Sources */,
 				FCB4E80F28805AF100E1F03E /* AppDelegate.swift in Sources */,
 				FCB4E81128805AF100E1F03E /* SceneDelegate.swift in Sources */,
+				FC5A524C2885EF3600135D74 /* DropboxBrowserViewCell.swift in Sources */,
+				FC5A524E2885F00F00135D74 /* dbRow.swift in Sources */,
 				FCB4E83828805E8C00E1F03E /* Album.swift in Sources */,
 				FCB4E83B288069F500E1F03E /* AlbumTableViewCell.swift in Sources */,
 				FCB4E83F28809D0300E1F03E /* MusicPlayerViewController.swift in Sources */,

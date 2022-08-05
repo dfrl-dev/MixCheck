@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyDropbox
 
 class ViewController: UIViewController {
     
@@ -49,7 +50,21 @@ class ViewController: UIViewController {
 
     @objc private func dropbox() {
         
-    }
+        if let client = DropboxClientsManager.authorizedClient {            
+            let vc = DropboxBrowserViewController()
+            present(vc, animated: true, completion: nil)
+        } else {
+            let scopeRequest = ScopeRequest(scopeType: .user, scopes: ["account_info.read", "files.content.write", "files.metadata.read", "files.content.read"], includeGrantedScopes: true)
+            DropboxClientsManager.authorizeFromControllerV2(
+                UIApplication.shared,
+                controller: self,
+                loadingStatusDelegate: nil,
+                openURL: { (url: URL) -> Void in UIApplication.shared.open(url, options: [:], completionHandler: nil) },
+                scopeRequest: scopeRequest
+                )
+        }
+        }
+        
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
